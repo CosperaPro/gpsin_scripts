@@ -1,0 +1,17 @@
+{
+  "name": "gpsin_scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "One-off migration scripts: copy data + auth users from the old (pre-env-migration) Firebase project into gpsin-dev / gpsin-stg / gpsin-prod.",
+  "scripts": {
+    "copy:firestore": "node scripts/copy-firestore.mjs",
+    "copy:auth": "node scripts/copy-auth.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}
